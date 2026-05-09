@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Suci Tarija ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#5b247a,#7b4397,#c471ed);
+    position:relative;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:620px;
+    padding:38px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,0.25);
+    box-shadow:0 10px 40px rgba(0,0,0,0.2);
+    text-align:center;
+    z-index:2;
+    animation:fadeIn 1.5s ease;
+}
+
+h1{
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:10px;
+    text-shadow:0 0 12px rgba(255,255,255,0.8);
+}
+
+.sub{
+    color:#f8dfff;
+    margin-bottom:18px;
+    font-size:1rem;
+}
+
+p{
+    color:white;
+    line-height:1.9;
+    font-size:1.05rem;
+}
+
+.heart{
+    font-size:65px;
+    animation:heartbeat 1.2s infinite;
+    margin:18px 0;
+}
+
+button{
+    margin-top:25px;
+    padding:13px 28px;
+    border:none;
+    border-radius:35px;
+    background:white;
+    color:#7b4397;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:1rem;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.star{
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 3s infinite;
+    opacity:0.7;
+}
+
+.float-heart{
+    position:absolute;
+    color:#ffd6ff;
+    animation:float 8s linear infinite;
+    opacity:0.8;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes heartbeat{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(100vh) scale(0);
+    }
+    100%{
+        transform:translateY(-10vh) scale(1.5);
+    }
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:0.2;
+    }
+    50%{
+        opacity:1;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>Untuk Suci Tarija ❤️</h1>
+
+    <div class="sub">
+        dari seseorang yang selalu menunggu kabar baik bersamamu
+    </div>
+
+    <div class="heart">💜</div>
+
+    <p>
+        Aku tahu sekarang kamu lagi menunggu satu kabar yang mungkin bikin deg-degan setiap hari…  
+        tentang SNBT itu.
+        <br><br>
+
+        Tapi apapun hasilnya nanti,  
+        jangan pernah ngerasa kalau perjuanganmu sia-sia.
+        <br><br>
+
+        Aku selalu percaya sama kamu.  
+        Sama cara kamu berusaha,  
+        sama capek yang selama ini kamu simpan sendiri,  
+        dan sama mimpi yang terus kamu perjuangkan diam-diam.
+        <br><br>
+
+        Kalau nanti kamu lulus,  
+        aku bakal jadi orang yang paling ikut senang.
+        <br><br>
+
+        Dan kalau ternyata belum sesuai harapan,  
+        aku tetap di sini.  
+        Karena aku nggak datang cuma buat ikut bahagia,  
+        tapi juga buat nemenin saat dunia lagi nggak ramah.
+        <br><br>
+
+        Kita mungkin lagi dipisahkan jarak dan proses hidup masing-masing,  
+        tapi aku suka cara kita tetap saling nunggu.
+        <br><br>
+
+        Jadi semangat terus ya, Suci Tarija.  
+        Aku masih menunggu hari itu...
+        <br><br>
+
+        tanggal 25 atau 26 nanti,
+        saat akhirnya kita bisa cerita langsung tanpa layar di tengah.
+        <br><br>
+
+        Dan jujur aja…  
+        aku kangen banget.
+        <br><br>
+
+        — Thohirin 💜
+    </p>
+
+    <button onclick="showLove()">
+        Klik pelan-pelan 💜
+    </button>
+
+</div>
+
+<script>
+function showLove(){
+    alert("Apapun hasil SNBT nanti, Thohirin tetap bangga sama Suci Tarija 💜");
+}
+
+for(let i=0;i<40;i++){
+    let heart=document.createElement("div");
+    heart.className="float-heart";
+    heart.innerHTML="💜";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(Math.random()*20+12)+"px";
+    heart.style.animationDuration=(Math.random()*5+5)+"s";
+    document.body.appendChild(heart);
+}
+
+for(let i=0;i<50;i++){
+    let star=document.createElement("div");
+    star.className="star";
+    star.style.left=Math.random()*100+"vw";
+    star.style.top=Math.random()*100+"vh";
+    star.style.animationDuration=(Math.random()*3+2)+"s";
+    document.body.appendChild(star);
+}
+</script>
+
+</body>
+</html>
